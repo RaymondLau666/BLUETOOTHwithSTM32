@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"bluetooth_text\startup_stm32f103xe.o"
+"bluetooth_text\main.o"
+"bluetooth_text\gpio.o"
+"bluetooth_text\usart.o"
+"bluetooth_text\stm32f1xx_it.o"
+"bluetooth_text\stm32f1xx_hal_msp.o"
+"bluetooth_text\stm32f1xx_hal_gpio_ex.o"
+"bluetooth_text\stm32f1xx_hal_tim.o"
+"bluetooth_text\stm32f1xx_hal_tim_ex.o"
+"bluetooth_text\stm32f1xx_hal_uart.o"
+"bluetooth_text\stm32f1xx_hal.o"
+"bluetooth_text\stm32f1xx_hal_rcc.o"
+"bluetooth_text\stm32f1xx_hal_rcc_ex.o"
+"bluetooth_text\stm32f1xx_hal_gpio.o"
+"bluetooth_text\stm32f1xx_hal_dma.o"
+"bluetooth_text\stm32f1xx_hal_cortex.o"
+"bluetooth_text\stm32f1xx_hal_pwr.o"
+"bluetooth_text\stm32f1xx_hal_flash.o"
+"bluetooth_text\stm32f1xx_hal_flash_ex.o"
+"bluetooth_text\stm32f1xx_hal_exti.o"
+"bluetooth_text\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "BLUETOOTH_TEXT\BLUETOOTH_TEXT.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BLUETOOTH_TEXT.map" -o BLUETOOTH_TEXT\BLUETOOTH_TEXT.axf
